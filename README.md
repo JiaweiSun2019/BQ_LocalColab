@@ -9,6 +9,7 @@ Step 2: Save the JSON file in the notebook subdirectory where you colab Dockerfi
 
 Step 3: In Colab, modify and run following Sample Script:
 
+```
 import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/ds_stack/notebooks/GoodRx-data-ga-dev-xxxxxx.json"
 project_id = 'goodrx-data-ga-dev'
@@ -23,4 +24,4 @@ SQL= '''
   FROM `XXXXXXX`
   '''
 
-df = client.query(SQL).to_dataframe()
+df = client.query(SQL).to_dataframe()```
